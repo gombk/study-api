@@ -375,11 +375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lzenaro\\Documents\\Git\\MagicVilla\\MagicVilla_Web\\MagicVilla_Web.csproj",
+      "projectUniqueName": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Web\\MagicVilla_Web.csproj",
       "projectName": "MagicVilla_Web",
-      "projectPath": "C:\\Users\\lzenaro\\Documents\\Git\\MagicVilla\\MagicVilla_Web\\MagicVilla_Web.csproj",
+      "projectPath": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Web\\MagicVilla_Web.csproj",
       "packagesPath": "C:\\Users\\lzenaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lzenaro\\Documents\\Git\\MagicVilla\\MagicVilla_Web\\obj\\",
+      "outputPath": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lzenaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -396,8 +396,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\lzenaro\\Documents\\Git\\MagicVilla\\MagicVilla_Utility\\MagicVilla_Utility.csproj": {
-              "projectPath": "C:\\Users\\lzenaro\\Documents\\Git\\MagicVilla\\MagicVilla_Utility\\MagicVilla_Utility.csproj"
+            "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Utility\\MagicVilla_Utility.csproj": {
+              "projectPath": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Utility\\MagicVilla_Utility.csproj"
             }
           }
         }
@@ -444,7 +444,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
       }
     }
   }
