@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dk1gwEC+yzi1w1DWBWoUXegC2kx4vjauD2ytUuPXgjO5B02EwmQZSUdLvxLpmI3yPIaC0Bq2VKUBs+hZpexO8g==",
+  "dgSpecHash": "tqVYeOac6cRivze3Z/iWo8Kiqiu9+sxtB1iqcKxZ1aYVQOGQrZ7OLEK1Fj3vgNoBQ4FtkLs3mn0L9bLhR1aeCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\lzenaro\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
+    "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
+    "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",
+    "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.0-preview.5.22303.8\\microsoft.aspnetcore.jsonpatch.7.0.0-preview.5.22303.8.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.0-preview.5.22303.8\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.0-preview.5.22303.8.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
@@ -37,6 +40,8 @@
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.0.0\\microsoft.extensions.dependencymodel.3.0.0.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.8\\microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.10\\microsoft.extensions.identity.core.6.0.10.nupkg.sha512",
+    "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.10\\microsoft.extensions.identity.stores.6.0.10.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0-preview.5.22301.12\\microsoft.extensions.logging.7.0.0-preview.5.22301.12.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0-preview.5.22301.12\\microsoft.extensions.logging.abstractions.7.0.0-preview.5.22301.12.nupkg.sha512",
     "C:\\Users\\lzenaro\\.nuget\\packages\\microsoft.extensions.options\\7.0.0-preview.5.22301.12\\microsoft.extensions.options.7.0.0-preview.5.22301.12.nupkg.sha512",
