@@ -1,10 +1,12 @@
 //using Serilog;
 
+using MagicVilla_Utility;
 using MagicVilla_VillaAPI;
 using MagicVilla_VillaAPI.Data;
 using MagicVilla_VillaAPI.Repository;
 using MagicVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -19,15 +21,19 @@ var builder = WebApplication.CreateBuilder(args);
 //    .WriteTo.File("log/villaLogs.txt", rollingInterval: RollingInterval.Minute).CreateLogger();
 
 //builder.Host.UseSerilog();
-builder.Services.AddDbContext<ApplicationDbContext>(options => {
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
 });
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddResponseCaching();
 builder.Services.AddScoped<IVillaRepository, VillaRepository>();
 builder.Services.AddScoped<IVillaNumberRepository, VillaNumberRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 
-builder.Services.AddApiVersioning(options => {
+builder.Services.AddApiVersioning(options =>
+{
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.DefaultApiVersion = new ApiVersion(1, 0);
     options.ReportApiVersions = true;
@@ -59,7 +65,26 @@ builder.Services.AddAuthentication(x =>
         };
     });
 
-builder.Services.AddControllers(option => {
+builder.Services.AddControllers(option =>
+{
+    option.CacheProfiles.Add(SD.Default30Sec,
+        new CacheProfile()
+        {
+            Duration = 30
+        });
+
+    option.CacheProfiles.Add(SD.Default60Sec,
+    new CacheProfile()
+    {
+        Duration = 60
+    });
+
+    option.CacheProfiles.Add(SD.DefaultNoStore,
+    new CacheProfile()
+    {
+        Location = ResponseCacheLocation.None,
+        NoStore = true
+    });
     //option.ReturnHttpNotAcceptable = true;
 })
     .AddNewtonsoftJson()
@@ -68,7 +93,8 @@ builder.Services.AddControllers(option => {
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme { 
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
         Description = "JWT Auth header using the bearer scheme. \r\n\r\nEnter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 21393xcjwe93\"",
         Name = "Authorization",
         In = ParameterLocation.Header,
@@ -77,7 +103,7 @@ builder.Services.AddSwaggerGen(options =>
     options.AddSecurityRequirement(new OpenApiSecurityRequirement() {
         {
             new OpenApiSecurityScheme
-            { 
+            {
                 Reference = new OpenApiReference {
                     Type = ReferenceType.SecurityScheme,
                     Id = "Bearer"
@@ -128,15 +154,16 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+//{
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Magic_VillaV1");
-        options.SwaggerEndpoint("/swagger/v2/swagger.json", "Magic_VillaV2");
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Magic_VillaV1");
+    options.SwaggerEndpoint("/swagger/v2/swagger.json", "Magic_VillaV2");
+    options.RoutePrefix = String.Empty;
+});
+//}
 
 app.UseHttpsRedirection();
 

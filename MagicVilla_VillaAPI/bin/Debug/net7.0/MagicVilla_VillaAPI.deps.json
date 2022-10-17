@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "12.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "MagicVilla_Utility": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
           "Microsoft.AspNetCore.JsonPatch": "7.0.0-preview.5.22303.8",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "7.0.0-preview.5.22303.8",
@@ -890,6 +891,11 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "MagicVilla_Utility/1.0.0": {
+        "runtime": {
+          "MagicVilla_Utility.dll": {}
+        }
       }
     }
   },
@@ -1563,6 +1569,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "MagicVilla_Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

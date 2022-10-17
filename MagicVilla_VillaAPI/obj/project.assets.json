@@ -1577,6 +1577,16 @@
             "rid": "win"
           }
         }
+      },
+      "MagicVilla_Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MagicVilla_Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MagicVilla_Utility.dll": {}
+        }
       }
     }
   },
@@ -4524,12 +4534,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MagicVilla_Utility/1.0.0": {
+      "type": "project",
+      "path": "../MagicVilla_Utility/MagicVilla_Utility.csproj",
+      "msbuildProject": "../MagicVilla_Utility/MagicVilla_Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
+      "MagicVilla_Utility >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.10",
       "Microsoft.AspNetCore.JsonPatch >= 7.0.0-preview.5.22303.8",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 7.0.0-preview.5.22303.8",
@@ -4569,7 +4585,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Utility\\MagicVilla_Utility.csproj": {
+              "projectPath": "C:\\Users\\lzenaro\\Documents\\Git\\study-api\\MagicVilla_Utility\\MagicVilla_Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

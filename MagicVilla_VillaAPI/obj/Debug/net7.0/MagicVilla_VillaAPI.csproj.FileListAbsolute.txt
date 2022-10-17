@@ -180,3 +180,5 @@ C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\obj\Debug\net7.0\Ma
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\obj\Debug\net7.0\ref\MagicVilla_VillaAPI.dll
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_Utility.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_VillaAPI\bin\Debug\net7.0\MagicVilla_Utility.pdb
