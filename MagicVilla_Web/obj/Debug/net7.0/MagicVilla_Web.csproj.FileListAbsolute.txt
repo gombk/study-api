@@ -72,3 +72,7 @@ C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\obj\Debug\net7.0\scopedc
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\obj\Debug\net7.0\MagicVilla_Web.csproj.CopyComplete
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\obj\Debug\net7.0\MagicVilla_Web.genruntimeconfig.cache
 C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\obj\Debug\net7.0\ref\MagicVilla_Web.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\lzenaro\Documents\Git\study-api\MagicVilla_Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
